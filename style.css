@@ -24,17 +24,17 @@ body {
 
 /* Navigation */
 .navbar {
+    height: auto;
+    padding: 1rem 5%;
     position: fixed;
     top: 0;
-    left: 0;
-    right: 0;
+    width: 100%;
+    z-index: 1000;
     background-color: white;
-    padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    z-index: 1000;
 }
 
 .logo {
@@ -148,6 +148,7 @@ body {
 
 /* Hero Section */
 .hero {
+    margin-top: 80px;
     height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
                 url('images/background.jpg') no-repeat center center;
@@ -159,21 +160,19 @@ body {
     justify-content: center;
     text-align: center;
     color: var(--white);
-    padding: 0 1rem;
-}
-
-.hero-content {
-    max-width: 800px;
+    padding: 60px 1rem 0 1rem;
 }
 
 .hero h1 {
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
+    line-height: 1.3;
+    font-size: clamp(2rem, 5vw, 3.5rem);
 }
 
 .hero p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    font-size: clamp(1rem, 4vw, 1.2rem);
 }
 
 .cta-button {
@@ -192,13 +191,21 @@ body {
 
 /* Sections */
 section {
-    padding: 5rem 10%;
+    padding: 6rem 5%;
 }
 
 section h2 {
     color: var(--tibetan-blue);
-    margin-bottom: 2rem;
+    margin-bottom: 1.2rem;
+    line-height: 1.3;
+    font-size: clamp(2rem, 5vw, 3rem);
     text-align: center;
+}
+
+section p {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    font-size: clamp(1rem, 4vw, 1.2rem);
 }
 
 /* About Section */
@@ -209,8 +216,9 @@ section h2 {
 
 .about h3 {
     color: var(--tibetan-red);
-    font-size: 1.8rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
+    line-height: 1.3;
+    font-size: clamp(1.5rem, 4vw, 1.8rem);
 }
 
 .about p {
@@ -248,7 +256,7 @@ section h2 {
     padding: 1.5rem;
     border-radius: 12px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 .menu-card-content {
@@ -275,9 +283,13 @@ section h2 {
 
 /* Responsive for small screens */
 @media (max-width: 600px) {
+    section {
+        padding: 4rem 1.5rem;
+    }
+
     .menu-card-horizontal {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: stretch;
     }
 
     .menu-card-horizontal img {
@@ -382,16 +394,18 @@ footer {
         height: auto;
         aspect-ratio: 16 / 9;
         min-height: 250px;
-        padding-top: 60px;
         background-color: var(--tibetan-blue);
+        align-items: flex-start;
+        padding-top: 0;
     }
-
+    .hero-content {
+        padding-top: 60px;
+    }
     .hero h1 {
         font-size: 2.5rem;
     }
-
     section {
-        padding: 3rem 5%;
+        padding: 4rem 5%;
     }
 }
 
