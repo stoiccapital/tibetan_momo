@@ -37,6 +37,11 @@ p {
 section {
     text-align: center;
     padding: 4rem 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 section h2,
@@ -229,6 +234,16 @@ img {
     font-size: clamp(1rem, 4vw, 1.2rem);
 }
 
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 /* Menu Section */
 .menu-grid {
     display: flex;
@@ -277,12 +292,16 @@ img {
     background-color: var(--light-gray);
     padding: 5rem 10%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .service p {
     max-width: 700px;
     margin: 0 auto 2rem;
     line-height: 1.6;
+    text-align: center;
 }
 
 .service-grid {
@@ -407,6 +426,9 @@ footer {
     padding: 2rem;
     margin-top: 80px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .content-section h2 {
