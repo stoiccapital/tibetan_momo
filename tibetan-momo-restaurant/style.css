@@ -1,0 +1,285 @@
+/* Variables */
+:root {
+    --tibetan-red: #C8102E;
+    --tibetan-blue: #00205B;
+    --tibetan-yellow: #FFD100;
+    --white: #ffffff;
+    --light-gray: #f5f5f5;
+    --dark-gray: #333333;
+}
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--dark-gray);
+}
+
+/* Navigation */
+.navbar {
+    background-color: var(--white);
+    padding: 1rem 5%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--tibetan-red);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--tibetan-blue);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--tibetan-red);
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                url('https://images.unsplash.com/photo-1617093727343-374698b1b08d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+    padding: 0 1rem;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: var(--tibetan-red);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #a00d25;
+}
+
+/* Sections */
+section {
+    padding: 5rem 10%;
+}
+
+section h2 {
+    color: var(--tibetan-blue);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* About Section */
+.about {
+    background-color: var(--light-gray);
+    text-align: center;
+}
+
+.about h3 {
+    color: var(--tibetan-red);
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.about p {
+    max-width: 800px;
+    margin: 0 auto 1.5rem;
+    line-height: 1.8;
+}
+
+.about p:last-child {
+    font-weight: 500;
+    color: var(--tibetan-blue);
+}
+
+/* Menu Section */
+.menu-list {
+    list-style: none;
+    max-width: 600px;
+    margin: 0 auto 3rem;
+    padding: 0;
+}
+
+.menu-list li {
+    background-color: var(--white);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.menu-list li:hover {
+    transform: translateY(-3px);
+}
+
+.menu-list strong {
+    color: var(--tibetan-red);
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.menu-info {
+    background-color: var(--light-gray);
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.menu-info p {
+    margin-bottom: 1rem;
+}
+
+.menu-info p:last-of-type {
+    margin-bottom: 1.5rem;
+}
+
+.menu-info .call-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: var(--tibetan-red);
+    color: var(--white);
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.menu-info .call-button:hover {
+    background-color: #a00d25;
+    transform: translateY(-2px);
+}
+
+.phone-icon {
+    font-size: 1.2rem;
+}
+
+/* Contact Section */
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.address, .contact-details {
+    background-color: var(--light-gray);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.call-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: var(--tibetan-red);
+    color: var(--white);
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.call-button:hover {
+    background-color: #a00d25;
+    transform: translateY(-2px);
+}
+
+.phone-icon {
+    font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+    background-color: var(--tibetan-blue);
+    color: var(--white);
+    padding: 3rem 10%;
+    text-align: center;
+}
+
+.opening-hours {
+    margin-bottom: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .nav-links {
+        margin-top: 1rem;
+        gap: 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    section {
+        padding: 3rem 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+} 
