@@ -8,7 +8,9 @@
 </head>
 <body>
     <nav class="navbar">
-        <div class="logo">Tibetan Momo</div>
+        <div class="logo">
+            <a href="index.html">Tibetan Momo</a>
+        </div>
         <button class="hamburger" aria-label="Menu">
             <span class="hamburger-line"></span>
             <span class="hamburger-line"></span>
@@ -42,27 +44,39 @@
 
     <section id="menu" class="menu">
         <h2>Speisekarte</h2>
-        <ul class="menu-list">
-            <li>
-                <strong>🥟 Klassische Rind-Momo</strong><br />
-                5 Stück – 10 CHF<br />
-                8 Stück – 15 CHF
-            </li>
-            <li>
-                <strong>🥬 Vegetarische Momo</strong><br />
-                5 Stück – 10 CHF<br />
-                8 Stück – 15 CHF
-            </li>
-            <li>
-                <strong>🔥 Frittierte Momo</strong><br />
-                5 Stück – 12 CHF<br />
-                8 Stück – 17 CHF
-            </li>
-            <li>
-                <strong>🥟 Frittierte Shabhalep</strong><br />
-                2 Stück – 10 CHF
-            </li>
-        </ul>
+        <div class="menu-grid">
+            <div class="menu-card-horizontal">
+                <div class="menu-card-content">
+                    <h3>🥟 Klassische Rind-Momo</h3>
+                    <p>Rindfleisch (CH)<br>5 Stück – 10 CHF<br>8 Stück – 15 CHF</p>
+                </div>
+                <img src="images/momo-rind.jpg" alt="Klassische Rind-Momo">
+            </div>
+
+            <div class="menu-card-horizontal">
+                <div class="menu-card-content">
+                    <h3>🥬 Vegetarische Momo</h3>
+                    <p>Spinat, Kartoffel und Käse<br>5 Stück – 10 CHF<br>8 Stück – 15 CHF</p>
+                </div>
+                <img src="images/momo-vegetarisch.jpg" alt="Vegetarische Momo">
+            </div>
+
+            <div class="menu-card-horizontal">
+                <div class="menu-card-content">
+                    <h3>🔥 Frittierte Momo</h3>
+                    <p>Klassische Rind-Momo oder Vegetarische Momo frittiert<br>5 Stück – 12 CHF<br>8 Stück – 17 CHF</p>
+                </div>
+                <img src="images/momo-frittiert.jpg" alt="Frittierte Momo">
+            </div>
+
+            <div class="menu-card-horizontal">
+                <div class="menu-card-content">
+                    <h3>🥟 Frittierte Shabhalep</h3>
+                    <p>Rindfleisch (CH)<br>2 Stück – 10 CHF</p>
+                </div>
+                <img src="images/shabhalep.jpg" alt="Frittierte Shabhalep">
+            </div>
+        </div>
 
         <div class="menu-info">
             <p><strong>Nur Take Away.</strong> Keine Lieferung möglich.</p>
@@ -99,6 +113,10 @@
         </div>
         <div class="copyright">
             <p>&copy; 2024 Tibetan Momo. Alle Rechte vorbehalten.</p>
+            <p>
+                <a href="impressum.html">Impressum</a> |
+                <a href="datenschutz.html">Datenschutzerklärung</a>
+            </p>
         </div>
     </footer>
 
