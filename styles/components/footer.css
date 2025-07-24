@@ -1,0 +1,11 @@
+/* Footer */
+footer {
+    background-color: var(--tibetan-blue);
+    color: var(--white);
+    padding: 3rem 10%;
+    text-align: center;
+}
+
+.opening-hours {
+    margin-bottom: 2rem;
+} 

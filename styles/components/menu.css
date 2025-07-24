@@ -1,0 +1,42 @@
+/* Menu Section */
+.menu-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.menu-card-horizontal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    gap: 1rem;
+    background-color: var(--white);
+}
+
+.menu-card-content {
+    flex: 1;
+    text-align: center;
+}
+
+.menu-card-horizontal img {
+    width: 160px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.menu-card-horizontal h3 {
+    color: var(--tibetan-red);
+    margin-bottom: 0.5rem;
+}
+
+.menu-card-horizontal p {
+    font-weight: 500;
+    color: var(--dark-gray);
+} 

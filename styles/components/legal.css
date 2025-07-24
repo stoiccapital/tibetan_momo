@@ -1,0 +1,41 @@
+/* Legal Pages Styles */
+.legal-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem;
+    text-align: left;
+}
+
+.legal-wrapper h2,
+.legal-wrapper h3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.legal-wrapper h2 {
+    color: var(--tibetan-red);
+}
+
+.legal-wrapper h3 {
+    font-size: 1.2rem;
+    color: var(--dark-gray);
+}
+
+.legal-wrapper p {
+    margin-bottom: 1.2rem;
+    line-height: 1.6;
+    color: var(--dark-gray);
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 2rem;
+    color: var(--tibetan-blue);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-link:hover {
+    background-color: var(--tibetan-red);
+    color: var(--white);
+} 
