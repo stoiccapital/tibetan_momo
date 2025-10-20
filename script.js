@@ -24,9 +24,32 @@ async function loadNavbar() {
     }
 }
 
+// Load footer into all pages
+async function loadFooter() {
+    try {
+        const response = await fetch('footer.html');
+        const footerHtml = await response.text();
+        
+        // Find the footer placeholder or create one
+        let footerContainer = document.getElementById('footer-container');
+        if (!footerContainer) {
+            // If no placeholder exists, insert footer before the closing body tag
+            const body = document.body;
+            const tempDiv = document.createElement('div');
+            tempDiv.innerHTML = footerHtml;
+            const footer = tempDiv.firstElementChild;
+            body.appendChild(footer);
+        } else {
+            footerContainer.innerHTML = footerHtml;
+        }
+    } catch (error) {
+        console.error('Error loading footer:', error);
+    }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
-    // Load navbar first
-    loadNavbar().then(() => {
+    // Load navbar and footer
+    Promise.all([loadNavbar(), loadFooter()]).then(() => {
         const hamburger = document.querySelector('.hamburger');
         const navMenu = document.querySelector('.nav-menu');
         const navLinks = document.querySelectorAll('.nav-links a');

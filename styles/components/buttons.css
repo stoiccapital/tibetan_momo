@@ -16,4 +16,51 @@
 .cta-button:hover,
 .call-button:hover {
     background-color: #a00d25;
+}
+
+/* Button Layouts */
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.menu-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.about-order {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* Order button specific styling */
+.order-button {
+    background-color: var(--tibetan-red);
+}
+
+.order-button:hover {
+    background-color: #a00d25;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .hero-buttons,
+    .menu-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero-buttons .cta-button,
+    .menu-buttons .cta-button,
+    .menu-buttons .call-button {
+        width: 100%;
+        max-width: 300px;
+    }
 } 

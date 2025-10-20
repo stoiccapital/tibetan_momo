@@ -167,4 +167,29 @@
     .nav-links a {
         padding: 0.5rem;
     }
+}
+
+/* Navbar Order Button */
+.nav-order-button {
+    background-color: var(--tibetan-red) !important;
+    color: var(--white) !important;
+    padding: 0.5rem 1rem !important;
+    border-radius: 5px !important;
+    font-weight: bold !important;
+    transition: background-color 0.3s ease !important;
+}
+
+.nav-order-button:hover {
+    background-color: #a00d25 !important;
+    color: var(--white) !important;
+}
+
+/* Mobile navbar order button */
+@media (max-width: 768px) {
+    .nav-order-button {
+        margin-top: 1rem !important;
+        text-align: center !important;
+        display: block !important;
+        width: 100% !important;
+    }
 } 
