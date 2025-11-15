@@ -5,9 +5,10 @@
     margin: 1.5rem auto 2rem;
     padding: 1rem 2rem;
     font-family: var(--font-body);
-    font-size: 1.05rem;
+    font-size: 0.95rem;
     font-weight: 600;
     letter-spacing: var(--letter-spacing-wide);
+    text-transform: uppercase;
     text-align: center;
     border-radius: 999px;
     background-color: var(--color-accent);
@@ -60,9 +61,10 @@
 .order-button {
     background-color: var(--color-accent);
     font-family: var(--font-body);
-    font-size: 1.05rem;
+    font-size: 0.95rem;
     font-weight: 600;
     letter-spacing: var(--letter-spacing-wide);
+    text-transform: uppercase;
 }
 
 .order-button:hover {

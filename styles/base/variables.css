@@ -17,7 +17,7 @@ damit sie auf Mobile und Desktop sofort ins Auge fallen.
     --font-body: "Inter", sans-serif;
     --line-height-base: 1.55;
     --line-height-tight: 1.25;
-    --letter-spacing-wide: 0.5px;
+    --letter-spacing-wide: 0.06em;
     
     /* New Color System */
     --color-bg: #f7f1e8;           /* page background - warm cream */

@@ -45,6 +45,7 @@
     font-weight: 600;
     font-size: 0.95rem;
     letter-spacing: var(--letter-spacing-wide);
+    text-transform: uppercase;
     transition: all 0.3s ease;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -70,16 +71,9 @@
     box-shadow: 0 4px 8px rgba(201, 75, 63, 0.3);
 }
 
-/* Uber Eats Button - Secondary uses surface alt */
-.ubereats-btn {
-    background-color: var(--color-surface-alt);
-    color: var(--color-text);
-}
-
-.ubereats-btn:hover,
-.ubereats-btn:active {
-    background-color: var(--color-accent-soft);
-    transform: translateY(-2px);
+/* Uber Eats Button - Hidden until restaurant URL is available */
+.sticky-order-button.ubereats-btn {
+    display: none;
 }
 
 /* Add padding to body to prevent content from being hidden behind sticky bar */
