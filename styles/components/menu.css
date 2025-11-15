@@ -34,17 +34,25 @@
 }
 
 .menu-card-horizontal h3 {
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 0.2px;
     color: var(--color-accent);
     margin-bottom: 0.5rem;
 }
 
 .menu-card-horizontal p {
-    font-weight: 500;
+    font-family: var(--font-body);
+    font-weight: 400;
     color: var(--color-text);
+    line-height: 1.6;
 }
 
 .menu-card-horizontal .price {
-    font-weight: 700;
+    font-family: var(--font-body);
+    font-weight: 600;
+    letter-spacing: 0.2px;
     color: var(--color-accent);
     font-size: 1.05rem;
 }
@@ -61,9 +69,11 @@
 }
 
 .menu-prep-notice p {
+    font-family: var(--font-body);
     margin: 0;
     color: var(--color-text);
     font-size: 1rem;
+    line-height: 1.6;
 }
 
 .menu-prep-notice strong {
@@ -81,9 +91,11 @@
 }
 
 .menu-combos h3 {
+    font-family: var(--font-display);
     text-align: center;
     color: var(--color-accent);
     font-size: 1.75rem;
+    font-weight: 600;
     margin-bottom: 2rem;
 }
 
@@ -113,12 +125,15 @@
 }
 
 .combo-card h4 {
+    font-family: var(--font-display);
     color: var(--color-text);
     font-size: 1.25rem;
+    font-weight: 600;
     margin: 0;
 }
 
 .combo-card p {
+    font-family: var(--font-body);
     color: var(--color-text-muted);
     margin: 0;
     line-height: 1.5;
@@ -138,7 +153,10 @@
     color: #ffffff;
     text-decoration: none;
     border-radius: 999px;
+    font-family: var(--font-body);
     font-weight: 600;
+    font-size: 1.05rem;
+    letter-spacing: var(--letter-spacing-wide);
     transition: all 0.3s ease;
     margin-top: 0.5rem;
 }

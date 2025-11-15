@@ -23,9 +23,11 @@
 }
 
 .cookie-header h3 {
+    font-family: var(--font-display);
     color: var(--color-accent);
     margin-bottom: 1rem;
     font-size: 1.3rem;
+    font-weight: 600;
 }
 
 .cookie-body {
@@ -33,9 +35,10 @@
 }
 
 .cookie-body p {
+    font-family: var(--font-body);
     margin-bottom: 0.8rem;
     font-size: 0.95rem;
-    line-height: 1.5;
+    line-height: 1.6;
     color: var(--color-text);
 }
 
@@ -47,11 +50,13 @@
 }
 
 .cookie-btn {
+    font-family: var(--font-body);
     padding: 0.8rem 1.5rem;
     border: none;
-    border-radius: 6px;
+    border-radius: 999px;
     font-size: 0.9rem;
     font-weight: 600;
+    letter-spacing: var(--letter-spacing-wide);
     cursor: pointer;
     transition: all 0.3s ease;
     text-decoration: none;

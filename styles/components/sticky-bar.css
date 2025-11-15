@@ -41,8 +41,10 @@
     padding: 0.875rem 1rem;
     border-radius: 8px;
     text-decoration: none;
+    font-family: var(--font-body);
     font-weight: 600;
     font-size: 0.95rem;
+    letter-spacing: var(--letter-spacing-wide);
     transition: all 0.3s ease;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }

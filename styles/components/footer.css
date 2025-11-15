@@ -25,17 +25,21 @@ footer {
 .address h3,
 .opening-hours h3,
 .contact-details h3 {
+    font-family: var(--font-display);
     color: var(--tibetan-yellow);
     margin-bottom: 1rem;
     font-size: 1.2rem;
+    font-weight: 600;
 }
 
 .address p,
 .opening-hours p,
 .contact-details p {
+    font-family: var(--font-body);
     line-height: 1.6;
     margin: 0;
     color: var(--white);
+    font-size: 1rem;
 }
 
 /* Copyright Section */
@@ -46,11 +50,14 @@ footer {
 }
 
 .copyright p {
+    font-family: var(--font-body);
     margin: 0.5rem 0;
     color: var(--white);
+    font-size: 0.95rem;
 }
 
 .copyright a {
+    font-family: var(--font-body);
     color: var(--white);
     text-decoration: none;
     transition: color 0.3s ease;

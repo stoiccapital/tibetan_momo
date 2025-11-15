@@ -36,10 +36,12 @@
 }
 
 .rating-text {
+    font-family: var(--font-body);
     color: var(--color-accent);
     text-decoration: none;
     font-weight: 600;
     font-size: 1.05rem;
+    letter-spacing: 0.2px;
     transition: color 0.3s ease;
 }
 
@@ -75,6 +77,7 @@
 }
 
 .stars {
+    font-family: var(--font-display);
     color: #FFD700;
     font-size: 1.25rem;
     text-align: center;
@@ -82,6 +85,8 @@
 }
 
 .testimonial-card p {
+    font-family: var(--font-body);
+    font-style: italic;
     color: var(--color-text);
     font-size: 1rem;
     line-height: 1.6;
@@ -91,10 +96,12 @@
 }
 
 .testimonial-author {
+    font-family: var(--font-body);
     color: var(--color-accent);
     font-weight: 600;
     text-align: center;
     font-size: 0.95rem;
+    letter-spacing: 0.2px;
     margin-top: 0.5rem;
 }
 

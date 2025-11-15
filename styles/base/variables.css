@@ -12,6 +12,13 @@ damit sie auf Mobile und Desktop sofort ins Auge fallen.
 */
 
 :root {
+    /* Typography System */
+    --font-display: "Playfair Display", serif;
+    --font-body: "Inter", sans-serif;
+    --line-height-base: 1.55;
+    --line-height-tight: 1.25;
+    --letter-spacing-wide: 0.5px;
+    
     /* New Color System */
     --color-bg: #f7f1e8;           /* page background - warm cream */
     --color-surface: #ffffff;      /* cards, sections - white */

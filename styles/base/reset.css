@@ -6,8 +6,9 @@
 }
 
 html, body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
+    font-family: "Inter", var(--font-body), sans-serif;
+    line-height: var(--line-height-base);
+    font-size: 17px;
     color: var(--color-text);
     background-color: var(--color-bg);
 }

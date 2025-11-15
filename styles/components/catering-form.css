@@ -13,17 +13,21 @@
 }
 
 .catering-inquiry h3 {
+    font-family: var(--font-display);
     color: var(--color-accent);
     font-size: 1.75rem;
+    font-weight: 600;
     margin-bottom: 0.5rem;
     text-align: center;
 }
 
 .catering-intro {
+    font-family: var(--font-body);
     text-align: center;
     color: var(--color-text);
     margin-bottom: 2rem;
     font-size: 1rem;
+    line-height: 1.6;
 }
 
 .catering-form-container {
@@ -69,22 +73,25 @@
 }
 
 .form-group label {
+    font-family: var(--font-body);
     font-weight: 600;
     color: var(--color-text);
     font-size: 0.95rem;
+    letter-spacing: 0.2px;
 }
 
 .form-group input,
 .form-group select,
 .form-group textarea {
+    font-family: var(--font-body);
     padding: 0.875rem;
     border: 2px solid var(--color-border);
     border-radius: 8px;
     font-size: 1rem;
-    font-family: inherit;
     transition: all 0.3s ease;
     background-color: var(--color-surface);
     color: var(--color-text);
+    line-height: 1.5;
 }
 
 .form-group input:focus,
