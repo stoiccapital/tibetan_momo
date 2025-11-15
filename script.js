@@ -1,5 +1,12 @@
 console.log('Willkommen im Tibetan Momo Restaurant!'); 
 
+// Utility function for mobile detection
+function isMobile() {
+    const width = window.innerWidth;
+    const mobile = width <= 768;
+    return mobile;
+}
+
 // Load navbar into all pages
 async function loadNavbar() {
     try {
@@ -48,6 +55,9 @@ async function loadFooter() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+    // Initialize components
+    new CookieConsent();
+    
     // Load navbar and footer
     Promise.all([loadNavbar(), loadFooter()]).then(() => {
         const hamburger = document.querySelector('.hamburger');
@@ -60,10 +70,6 @@ document.addEventListener('DOMContentLoaded', () => {
         overlay.className = 'overlay';
         body.appendChild(overlay);
 
-        // Check if we're on mobile
-        function isMobile() {
-            return window.innerWidth <= 768;
-        }
 
         // Toggle menu function (only works on mobile)
         function toggleMenu() {
@@ -157,13 +163,11 @@ class CookieConsent {
         this.setCookie(this.cookieName, 'accepted', this.cookieExpiryDays);
         this.hidePopup();
         this.loadAnalytics();
-        console.log('Cookies accepted');
     }
 
     rejectCookies() {
         this.setCookie(this.cookieName, 'rejected', this.cookieExpiryDays);
         this.hidePopup();
-        console.log('Cookies rejected');
     }
 
     setCookie(name, value, days) {
@@ -187,108 +191,6 @@ class CookieConsent {
         // Placeholder for analytics loading
         // You can add Google Analytics, Facebook Pixel, or other tracking scripts here
         console.log('Analytics would be loaded here');
-        
-        // Example: Google Analytics
-        // if (typeof gtag !== 'undefined') {
-        //     gtag('consent', 'update', {
-        //         'analytics_storage': 'granted'
-        //     });
-        // }
     }
 }
 
-// Testimonials Carousel
-class TestimonialsCarousel {
-    constructor() {
-        this.track = document.getElementById('testimonialsTrack');
-        this.prevBtn = document.getElementById('prevBtn');
-        this.nextBtn = document.getElementById('nextBtn');
-        this.dotsContainer = document.getElementById('carouselDots');
-        this.cards = document.querySelectorAll('.testimonial-card');
-        this.currentIndex = 0;
-        this.cardsPerView = 3;
-        // For 11 cards showing 3 at a time: slides 0-2, 3-5, 6-8, 9-10 (4 total slides)
-        this.totalSlides = Math.ceil(this.cards.length / this.cardsPerView);
-        
-        this.init();
-    }
-
-    init() {
-        console.log(`Total cards: ${this.cards.length}, Cards per view: ${this.cardsPerView}, Total slides: ${this.totalSlides}`);
-        this.createDots();
-        this.updateCarousel();
-        this.addEventListeners();
-        this.updateButtonStates();
-    }
-
-    createDots() {
-        for (let i = 0; i < this.totalSlides; i++) {
-            const dot = document.createElement('button');
-            dot.className = 'carousel-dot';
-            if (i === 0) dot.classList.add('active');
-            dot.addEventListener('click', () => this.goToSlide(i));
-            this.dotsContainer.appendChild(dot);
-        }
-    }
-
-    addEventListeners() {
-        this.prevBtn.addEventListener('click', () => this.prevSlide());
-        this.nextBtn.addEventListener('click', () => this.nextSlide());
-        
-        // Auto-play functionality (optional)
-        // setInterval(() => this.nextSlide(), 5000);
-    }
-
-    nextSlide() {
-        if (this.currentIndex < this.totalSlides - 1) {
-            this.currentIndex++;
-        } else {
-            this.currentIndex = 0; // Loop back to start
-        }
-        this.updateCarousel();
-    }
-
-    prevSlide() {
-        if (this.currentIndex > 0) {
-            this.currentIndex--;
-        } else {
-            this.currentIndex = this.totalSlides - 1; // Loop to end
-        }
-        this.updateCarousel();
-    }
-
-    goToSlide(index) {
-        this.currentIndex = index;
-        this.updateCarousel();
-    }
-
-    updateCarousel() {
-        // Calculate the translation based on the current slide
-        // Each slide moves by exactly 3 cards (100% of the visible area)
-        const translateX = -this.currentIndex * 100;
-        this.track.style.transform = `translateX(${translateX}%)`;
-        
-        this.updateDots();
-        this.updateButtonStates();
-    }
-
-    updateDots() {
-        const dots = this.dotsContainer.querySelectorAll('.carousel-dot');
-        dots.forEach((dot, index) => {
-            dot.classList.toggle('active', index === this.currentIndex);
-        });
-    }
-
-    updateButtonStates() {
-        // Enable/disable buttons based on current position
-        // For infinite loop, we don't disable buttons
-        // this.prevBtn.disabled = this.currentIndex === 0;
-        // this.nextBtn.disabled = this.currentIndex === this.totalSlides - 1;
-    }
-}
-
-// Initialize cookie consent when DOM is loaded
-document.addEventListener('DOMContentLoaded', () => {
-    new CookieConsent();
-    new TestimonialsCarousel();
-}); 

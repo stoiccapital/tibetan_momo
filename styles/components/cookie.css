@@ -93,4 +93,42 @@
 .cookie-link:hover {
     color: var(--tibetan-red);
     text-decoration: underline;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .cookie-content {
+        padding: 1rem 5%;
+    }
+    
+    .cookie-actions {
+        flex-direction: column;
+    }
+    
+    .cookie-btn {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .cookie-header h3 {
+        font-size: 1.2rem;
+    }
+    
+    .cookie-body p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .cookie-content {
+        padding: 1rem 4%;
+    }
+    
+    .cookie-header h3 {
+        font-size: 1.1rem;
+    }
+    
+    .cookie-body p {
+        font-size: 0.85rem;
+    }
 } 

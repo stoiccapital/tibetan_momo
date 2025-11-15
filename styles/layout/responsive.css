@@ -1,29 +1,41 @@
 /* Responsive Design */
+
+/* Tablet and below */
 @media (max-width: 768px) {
     .hero {
-        background-size: contain;
-        background-repeat: no-repeat;
+        background-size: cover;
         background-position: center center;
         height: auto;
-        aspect-ratio: 16 / 9;
-        min-height: 250px;
-        background-color: var(--tibetan-blue);
-        align-items: flex-start;
-        padding-top: 0;
+        min-height: 500px;
+        align-items: center;
+        padding: 2rem 1rem;
     }
 
     .hero-content {
-        padding-top: 60px;
+        padding-top: 2rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .hero-buttons .cta-button {
+        width: 100%;
+        max-width: 300px;
     }
 
     .menu-card-horizontal {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        padding: 1.25rem;
     }
 
     .menu-card-horizontal img {
         width: 100%;
+        max-width: 300px;
         height: auto;
         margin-top: 1rem;
     }
@@ -32,43 +44,26 @@
         height: 350px;
     }
 
-    .cookie-content {
-        padding: 1rem 5%;
-    }
-    
-    .cookie-actions {
-        flex-direction: column;
-    }
-    
-    .cookie-btn {
-        width: 100%;
-        text-align: center;
-    }
-    
-    .cookie-header h3 {
-        font-size: 1.2rem;
-    }
-    
-    .cookie-body p {
-        font-size: 0.9rem;
+    section {
+        padding: 3rem 1.5rem;
     }
 }
 
-@media (max-width: 600px) {
-    .menu-item-with-image {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .menu-item-image {
-        width: 100%;
-        max-width: 250px;
-        margin-top: 1rem;
-    }
-}
-
+/* Mobile phones */
 @media (max-width: 480px) {
+    .hero {
+        min-height: 450px;
+        padding: 1.5rem 1rem;
+    }
+
     .hero h1 {
-        font-size: 2rem;
+        font-size: 1.75rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero-location {
+        font-size: 0.9rem;
+        padding: 0.6rem 1.25rem;
     }
 
     .map-container iframe {
@@ -76,18 +71,31 @@
     }
 
     section {
-        padding: 3rem 1rem;
+        padding: 2.5rem 1rem;
     }
 
-    .cookie-content {
-        padding: 1rem 4%;
+    .service-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
     }
-    
-    .cookie-header h3 {
-        font-size: 1.1rem;
+
+    .menu-card-horizontal {
+        padding: 1rem;
     }
-    
-    .cookie-body p {
-        font-size: 0.85rem;
+}
+
+/* Small mobile phones */
+@media (max-width: 360px) {
+    .hero {
+        min-height: 400px;
+    }
+
+    .hero-buttons .cta-button {
+        padding: 0.875rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    section {
+        padding: 2rem 0.875rem;
     }
 } 

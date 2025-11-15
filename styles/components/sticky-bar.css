@@ -1,0 +1,95 @@
+/* ========================================
+   Sticky Mobile Order Bar
+   ======================================== */
+
+.sticky-order-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.98), rgba(255, 255, 255, 0.95));
+    backdrop-filter: blur(10px);
+    padding: 0.75rem 1rem;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    display: none; /* Hidden by default, shown only on mobile */
+    gap: 0.75rem;
+}
+
+/* Show only on mobile and tablet */
+@media (max-width: 900px) {
+    .sticky-order-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.sticky-order-button {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.875rem 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sticky-order-button .button-icon {
+    font-size: 1.25rem;
+}
+
+.sticky-order-button .button-text {
+    white-space: nowrap;
+}
+
+/* WhatsApp Button */
+.whatsapp-btn {
+    background-color: #25D366;
+    color: white;
+}
+
+.whatsapp-btn:hover,
+.whatsapp-btn:active {
+    background-color: #20BA5A;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(37, 211, 102, 0.3);
+}
+
+/* Uber Eats Button */
+.ubereats-btn {
+    background-color: var(--tibetan-red);
+    color: white;
+}
+
+.ubereats-btn:hover,
+.ubereats-btn:active {
+    background-color: #a00d25;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(194, 24, 41, 0.3);
+}
+
+/* Add padding to body to prevent content from being hidden behind sticky bar */
+@media (max-width: 900px) {
+    body {
+        padding-bottom: 70px;
+    }
+}
+
+/* Smaller screens - stack buttons or reduce text */
+@media (max-width: 400px) {
+    .sticky-order-button {
+        font-size: 0.85rem;
+        padding: 0.75rem 0.5rem;
+    }
+    
+    .sticky-order-button .button-text {
+        font-size: 0.8rem;
+    }
+}
+

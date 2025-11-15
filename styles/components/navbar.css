@@ -14,20 +14,25 @@
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: var(--tibetan-red);
+    display: flex;
+    align-items: center;
 }
 
 .logo a {
+    display: flex;
+    align-items: center;
     text-decoration: none;
-    color: var(--tibetan-red);
-    font-size: 1.5rem;
-    font-weight: bold;
 }
 
-.logo a:hover {
-    text-decoration: underline;
+.navbar-logo-img {
+    height: 80px;
+    width: auto;
+    object-fit: contain;
+    transition: opacity 0.3s ease;
+}
+
+.navbar-logo-img:hover {
+    opacity: 0.8;
 }
 
 .hamburger {
@@ -167,6 +172,13 @@
     .nav-links a {
         padding: 0.5rem;
     }
+    
+    .nav-order-button {
+        margin-top: 1rem !important;
+        text-align: center !important;
+        display: block !important;
+        width: 100% !important;
+    }
 }
 
 /* Navbar Order Button */
@@ -183,13 +195,3 @@
     background-color: #a00d25 !important;
     color: var(--white) !important;
 }
-
-/* Mobile navbar order button */
-@media (max-width: 768px) {
-    .nav-order-button {
-        margin-top: 1rem !important;
-        text-align: center !important;
-        display: block !important;
-        width: 100% !important;
-    }
-} 

@@ -20,4 +20,6 @@
 @import url('./components/footer.css');
 @import url('./components/legal.css');
 @import url('./components/cookie.css');
-@import url('./components/testimonials.css'); 
+@import url('./components/sticky-bar.css');
+@import url('./components/catering-form.css');
+@import url('../testimonials/testimonials.css');
