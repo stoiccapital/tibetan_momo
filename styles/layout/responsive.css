@@ -82,6 +82,20 @@
     .menu-card-horizontal {
         padding: 1rem;
     }
+
+    /* Reduce excessive spacing on very small screens */
+    .about, .menu, .service, .testimonials {
+        padding: 2rem 1rem;
+    }
+
+    .menu-prep-notice {
+        margin: 1.5rem auto;
+    }
+
+    .menu-combos {
+        margin: 2rem auto;
+        padding: 1.5rem;
+    }
 }
 
 /* Small mobile phones */

@@ -5,11 +5,11 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    color: var(--dark-gray);
-    background-color: var(--white);
+    color: var(--color-text);
+    background-color: var(--color-bg);
 }
 
 html {

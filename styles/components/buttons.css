@@ -1,4 +1,4 @@
-/* Buttons */
+/* Buttons - Primary CTAs use accent color */
 .cta-button,
 .call-button {
     display: inline-block;
@@ -7,12 +7,12 @@
     font-size: 1.05rem;
     font-weight: 600;
     text-align: center;
-    border-radius: 8px;
-    background-color: var(--tibetan-red);
-    color: var(--white);
+    border-radius: 999px;
+    background-color: var(--color-accent);
+    color: #ffffff;
     text-decoration: none;
     transition: all 0.3s ease;
-    box-shadow: 0 2px 8px rgba(194, 24, 41, 0.3);
+    box-shadow: 0 2px 8px rgba(201, 75, 63, 0.3);
     cursor: pointer;
     border: none;
     /* Ensure buttons are easy to tap on mobile */
@@ -22,9 +22,9 @@
 
 .cta-button:hover,
 .call-button:hover {
-    background-color: #a00d25;
+    background-color: var(--color-accent-dark);
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(194, 24, 41, 0.4);
+    box-shadow: 0 4px 12px rgba(201, 75, 63, 0.4);
 }
 
 .cta-button:active,
@@ -56,11 +56,11 @@
 
 /* Order button specific styling */
 .order-button {
-    background-color: var(--tibetan-red);
+    background-color: var(--color-accent);
 }
 
 .order-button:hover {
-    background-color: #a00d25;
+    background-color: var(--color-accent-dark);
 }
 
 /* Mobile responsive */

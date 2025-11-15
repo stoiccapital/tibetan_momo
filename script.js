@@ -54,9 +54,29 @@ async function loadFooter() {
     }
 }
 
+// Smooth scroll to anchors
+function initSmoothScroll() {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            const href = this.getAttribute('href');
+            if (href !== '#' && href.length > 1) {
+                e.preventDefault();
+                const target = document.querySelector(href);
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            }
+        });
+    });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     // Initialize components
     new CookieConsent();
+    initSmoothScroll();
     
     // Load navbar and footer
     Promise.all([loadNavbar(), loadFooter()]).then(() => {

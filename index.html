@@ -74,7 +74,7 @@ Sections:
             <p class="hero-location">📍 Zentrum Regensdorf | ⏰ Di–Sa 11–20 Uhr</p>
             <div class="hero-buttons">
                 <a href="#menu" class="cta-button">Speisekarte ansehen</a>
-                <a href="https://wa.me/41765795926" class="cta-button order-button">Jetzt bestellen</a>
+                <a href="https://wa.me/41765795926?text=Hallo!%20Ich%20möchte%20gerne%20Momos%20bestellen%3A%0A%0A%E2%80%93%20Rind-Momos%3A%20__%20Stück%0A%E2%80%93%20Vegi-Momos%3A%20__%20Stück%0A%0AAbholung%20um%3A%20__%20Uhr%0AName%3A%20__" class="cta-button order-button">Jetzt bestellen</a>
             </div>
         </div>
     </section>
@@ -142,13 +142,6 @@ Sections:
         <div class="menu-prep-notice">
             <p>⏱️ <strong>Zubereitungszeit:</strong> Wir benötigen ca. 10 Minuten zur frischen Zubereitung Ihrer Momos.</p>
         </div>
-
-        <div class="menu-info">
-            <p><strong>Lieferung auf Uber Eats verfügbar</strong></p>
-            <div class="menu-buttons">
-                <a href="https://wa.me/41765795926" class="cta-button order-button">Per WhatsApp bestellen</a>
-            </div>
-        </div>
     </section>
 
     <section id="service" class="service">
@@ -180,7 +173,7 @@ Sections:
         </div>
     </section>
 
-    <section class="testimonials">
+    <section id="testimonials" class="testimonials">
         <h2>Was Gäste über uns sagen</h2>
         
         <!-- Google Rating Sub-headline -->
@@ -250,11 +243,12 @@ Sections:
 
     <!-- Sticky Mobile Order Bar -->
     <div class="sticky-order-bar">
-        <a href="https://wa.me/41765795926" class="sticky-order-button whatsapp-btn">
+        <a href="https://wa.me/41765795926?text=Hallo!%20Ich%20möchte%20gerne%20Momos%20bestellen%3A%0A%0A%E2%80%93%20Rind-Momos%3A%20__%20Stück%0A%E2%80%93%20Vegi-Momos%3A%20__%20Stück%0A%0AAbholung%20um%3A%20__%20Uhr%0AName%3A%20__" class="sticky-order-button whatsapp-btn">
             <span class="button-icon">💬</span>
-            <span class="button-text">WhatsApp Bestellung</span>
+            <span class="button-text">Jetzt bestellen</span>
         </a>
-        <a href="https://www.ubereats.com" class="sticky-order-button ubereats-btn">
+        <a href="#" class="sticky-order-button ubereats-btn">
+            <!-- TODO: Add actual Uber Eats restaurant URL here -->
             <span class="button-icon">🛵</span>
             <span class="button-text">Uber Eats</span>
         </a>
@@ -286,53 +280,55 @@ Sections:
 
 <!--
 =================================================================
-ÄNDERUNGEN - CRO & UX-OPTIMIERUNG (Durchgeführt)
+MOBILE UX & CONVERSION-OPTIMIERUNG (Optimiert)
 =================================================================
 
-✅ SEO & Local Search:
-- Optimierter Titel & Meta-Description mit Fokus auf "Momos, tibetische Küche, Regensdorf"
-- LocalBusiness Schema (JSON-LD) mit vollständiger Adresse, Öffnungszeiten, Bewertungen
-- Verbesserte Alt-Texte für alle Bilder (SEO + Accessibility)
-- Lazy Loading für nicht-kritische Bilder
+✅ Sticky Mobile Order Bar (Step 2):
+- Fixed Bottom Bar nur auf Mobile/Tablet (≤900px)
+- WhatsApp Button mit vorbefüllter Bestellnachricht
+- Uber Eats Button (TODO: Restaurant-URL hinzufügen)
+- Touch-optimiert, immer sichtbar beim Scrollen
 
-✅ Hero-Section:
-- Standort & Öffnungszeiten prominent angezeigt (Regensdorf, Di-Sa 11-20 Uhr)
-- CTA-Buttons optimiert ("Jetzt bestellen" statt nur "Bestellen")
-- Mobile-optimierte Darstellung
+✅ Hero Section (Step 3):
+- Standort & Öffnungszeiten klar angezeigt
+- Zwei Call-to-Action Buttons mit klarem Fokus
+- WhatsApp-Link mit vorbefüllter Bestell-Vorlage
+- Mobile-optimierte Button-Größen (tap-friendly)
 
-✅ Speisekarte (Menu):
-- Preise mit <span class="price"> ausgezeichnet für besseres Styling
-- Zubereitungszeit prominent platziert
-- Neue Sektion "Beliebte Kombinationen" mit 3 Paket-Angeboten:
-  * Momo Box für 2 Personen (16 Stück, 30 CHF)
-  * Party Platte (40 Stück, 70 CHF)
-  * Familien-Paket (24 Stück + 4 Shabhalep, 50 CHF)
-- Direkte WhatsApp-Links mit vorbefüllten Texten
+✅ Speisekarte (Step 4):
+- Zubereitungszeit (10 Min.) prominent platziert
+- "Beliebte Kombinationen" Sektion mit 3 Paketen
+- WhatsApp-Buttons mit vorbefüllten Order-Templates
+- Alle Preise klar lesbar auf Mobile
 
-✅ Service & Catering:
-- Vollständiges Catering-Anfrageformular hinzugefügt
-- Felder: Name, Telefon, E-Mail, Datum, Personenanzahl, Anlass-Art, Nachricht
-- Mobile-optimiertes Layout mit Formvalidierung
-- Alternative Kontaktmöglichkeiten (WhatsApp, Telefon) verlinkt
+✅ Catering Inquiry Form (Step 5):
+- Vollständiges Anfrageformular unter Service
+- Mailto-basierte Formular-Submission
+- Direkte WhatsApp-Alternative mit vorbefüllter Nachricht
+- Single-Column Layout für Mobile
 
-✅ Testimonials:
-- Aria-Labels für Carousel-Buttons ("Vorherige/Nächste Bewertung")
-- Verbesserte Accessibility für Screen-Reader
+✅ SEO & Performance:
+- Meta-Tags optimiert für Local Search
+- LocalBusiness Schema mit 5.0 Rating
+- Lazy Loading für alle Bilder
+- Alt-Texte in Deutsch für Accessibility
 
-✅ Mobile Conversion:
-- Sticky Bottom Bar für Mobile/Tablet (nur bis 900px Breite)
-- Zwei Buttons: WhatsApp Bestellung & Uber Eats
-- Immer sichtbar beim Scrollen, nicht aufdringlich gestylt
-
-✅ Code-Qualität:
-- Strukturkommentare im HTML für bessere Wartbarkeit
-- Semantische Markup-Struktur beibehalten
-- Keine Frameworks eingeführt, reine Vanilla-Lösung
+✅ Mobile Spacing (Step 7):
+- Reduzierte Padding auf kleinen Screens
+- Optimierte Lesbarkeit und Tap-Targets
+- Smooth Scroll zu allen Sections
 
 =================================================================
-TODO für Restaurant-Betreiber:
-- Uber Eats Link im Sticky Bar aktualisieren (aktuell Placeholder)
-- Kombi-Angebote bei Bedarf anpassen
-- Catering-Formular auf Backend umstellen oder E-Mail-Integration prüfen
+IMPLEMENTIERUNGSDETAILS:
+- Prefilled WhatsApp Messages für schnellere Orders
+- Form sendet via mailto: an Restaurant-E-Mail
+- Alle CTAs führen zu konkreten Aktionen
+- Minimaler JS-Overhead, sauberer Vanilla Code
+=================================================================
+
+TODO für Restaurant:
+- Uber Eats Restaurant-URL im Sticky Bar hinzufügen
+- Bei Bedarf Backend für Catering-Form integrieren
+- Kombi-Preise anpassen falls gewünscht
 =================================================================
 --> 

@@ -4,12 +4,12 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: var(--white);
+    background-color: var(--color-surface);
     box-shadow: 0 -2px 20px rgba(0, 0, 0, 0.1);
     z-index: 10000;
     transform: translateY(100%);
     transition: transform 0.3s ease-in-out;
-    border-top: 3px solid var(--tibetan-red);
+    border-top: 3px solid var(--color-accent);
 }
 
 .cookie-consent.show {
@@ -23,7 +23,7 @@
 }
 
 .cookie-header h3 {
-    color: var(--tibetan-red);
+    color: var(--color-accent);
     margin-bottom: 1rem;
     font-size: 1.3rem;
 }
@@ -36,7 +36,7 @@
     margin-bottom: 0.8rem;
     font-size: 0.95rem;
     line-height: 1.5;
-    color: var(--dark-gray);
+    color: var(--color-text);
 }
 
 .cookie-actions {
@@ -59,23 +59,23 @@
 }
 
 .accept-btn {
-    background-color: var(--tibetan-red);
-    color: var(--white);
+    background-color: var(--color-accent);
+    color: #ffffff;
 }
 
 .accept-btn:hover {
-    background-color: #a00d25;
+    background-color: var(--color-accent-dark);
     transform: translateY(-1px);
 }
 
 .reject-btn {
-    background-color: var(--light-gray);
-    color: var(--dark-gray);
-    border: 1px solid #ddd;
+    background-color: transparent;
+    color: var(--color-text);
+    border: 1px solid var(--color-border);
 }
 
 .reject-btn:hover {
-    background-color: #e0e0e0;
+    background-color: var(--color-accent-soft);
     transform: translateY(-1px);
 }
 
@@ -84,14 +84,14 @@
 }
 
 .cookie-link {
-    color: var(--tibetan-blue);
+    color: var(--color-text-muted);
     text-decoration: none;
     font-size: 0.85rem;
     transition: color 0.3s ease;
 }
 
 .cookie-link:hover {
-    color: var(--tibetan-red);
+    color: var(--color-accent);
     text-decoration: underline;
 }
 

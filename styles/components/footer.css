@@ -1,7 +1,7 @@
 /* Footer */
 footer {
-    background-color: var(--tibetan-red);
-    color: var(--white);
+    background-color: var(--color-accent);
+    color: #ffffff;
     padding: 3rem 10%;
     text-align: left;
 }
