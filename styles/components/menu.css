@@ -35,24 +35,32 @@
 
 .menu-card-horizontal h3 {
     font-family: var(--font-display);
-    font-size: 1.4rem;
+    font-size: 1.35rem;
     font-weight: 600;
-    letter-spacing: 0.2px;
+    letter-spacing: -0.01em;
     color: var(--color-accent);
     margin-bottom: 0.5rem;
+}
+
+.menu-card-content h3 {
+    font-family: var(--font-display);
+    font-size: 1.35rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
 }
 
 .menu-card-horizontal p {
     font-family: var(--font-body);
     font-weight: 400;
     color: var(--color-text);
-    line-height: 1.6;
+    line-height: 1.75;
+    letter-spacing: 0.01em;
 }
 
 .menu-card-horizontal .price {
     font-family: var(--font-body);
     font-weight: 600;
-    letter-spacing: 0.2px;
+    letter-spacing: 0.03em;
     color: var(--color-accent);
     font-size: 1.05rem;
 }
@@ -73,7 +81,8 @@
     margin: 0;
     color: var(--color-text);
     font-size: 1rem;
-    line-height: 1.6;
+    line-height: 1.75;
+    letter-spacing: 0.01em;
 }
 
 .menu-prep-notice strong {
@@ -94,8 +103,9 @@
     font-family: var(--font-display);
     text-align: center;
     color: var(--color-accent);
-    font-size: 1.75rem;
-    font-weight: 600;
+    font-size: clamp(1.3rem, 3vw, 1.6rem);
+    font-weight: 500;
+    letter-spacing: -0.01em;
     margin-bottom: 2rem;
 }
 
@@ -127,8 +137,9 @@
 .combo-card h4 {
     font-family: var(--font-display);
     color: var(--color-text);
-    font-size: 1.25rem;
-    font-weight: 600;
+    font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+    font-weight: 500;
+    letter-spacing: -0.01em;
     margin: 0;
 }
 
@@ -136,7 +147,8 @@
     font-family: var(--font-body);
     color: var(--color-text-muted);
     margin: 0;
-    line-height: 1.5;
+    line-height: 1.75;
+    letter-spacing: 0.01em;
 }
 
 .combo-price {

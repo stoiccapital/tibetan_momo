@@ -7,22 +7,23 @@
 
 /* H1 - Hero Display */
 h1 {
-    font-family: "Playfair Display", var(--font-display), serif;
-    font-size: clamp(2.4rem, 6vw, 3.6rem);
-    font-weight: 600;
+    font-family: var(--font-display);
+    font-size: clamp(2.4rem, 6vw, 3.5rem);
+    font-weight: 700;
     line-height: var(--line-height-tight);
-    letter-spacing: -1px;
+    letter-spacing: -0.02em;
     color: var(--color-text);
 }
 
 /* H2 - Section Titles */
 h2 {
-    font-family: "Playfair Display", var(--font-display), serif;
-    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    font-family: var(--font-display);
+    font-size: clamp(1.9rem, 4vw, 2.6rem);
     font-weight: 600;
     line-height: var(--line-height-tight);
-    letter-spacing: 0;
-    margin-bottom: 0.8rem;
+    letter-spacing: -0.01em;
+    margin-top: 0;
+    margin-bottom: 1.2rem;
     text-align: center;
     color: var(--color-text);
     position: relative;
@@ -43,11 +44,11 @@ h2[data-label]::before {
 
 /* H3 - Subtitles */
 h3 {
-    font-family: "Playfair Display", var(--font-display), serif;
-    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    font-family: var(--font-display);
+    font-size: clamp(1.3rem, 3vw, 1.6rem);
     font-weight: 500;
     line-height: var(--line-height-tight);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.4rem;
     color: var(--color-text);
 }
 
@@ -62,18 +63,23 @@ h4 {
 
 /* Paragraphs */
 p {
-    font-family: "Inter", var(--font-body), sans-serif;
+    font-family: var(--font-body);
     font-size: 1rem;
-    line-height: 1.6;
+    line-height: 1.75;
+    letter-spacing: 0.01em;
     margin-bottom: 1rem;
     color: var(--color-text);
 }
 
 /* Enhanced paragraph sizes for specific sections */
 .about p,
-.menu-card-content p {
-    font-size: 1.02rem;
-    line-height: 1.65;
+.menu-card-content p,
+.service-card p,
+.testimonial-card p {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: 1.75;
+    letter-spacing: 0.01em;
 }
 
 /* Section-specific paragraph styling */
@@ -84,16 +90,21 @@ section p {
     margin: 0 auto 1.5rem;
 }
 
+/* Add breathing room between text blocks */
+p + p {
+    margin-top: 0.75rem;
+}
+
 /* About section headings */
 .about h2 {
     color: var(--color-text);
-    margin-bottom: 2rem;
+    margin-bottom: 1.2rem;
 }
 
 .about h3 {
     color: var(--color-accent);
-    margin-bottom: 2rem;
-    font-weight: 600;
+    margin-bottom: 1.2rem;
+    font-weight: 500;
 }
 
 /* Mobile Typography Adjustments */
@@ -103,13 +114,13 @@ section p {
     }
 
     h1 {
-        font-size: clamp(2rem, 6vw, 2.8rem);
-        letter-spacing: -0.5px;
+        font-size: clamp(2.4rem, 6vw, 3.5rem);
+        letter-spacing: -0.02em;
     }
 
     h2 {
-        font-size: clamp(1.6rem, 5vw, 2.2rem);
-        margin-bottom: 0.6rem;
+        font-size: clamp(1.9rem, 4vw, 2.6rem);
+        margin-bottom: 1.2rem;
     }
 
     h2[data-label]::before {
@@ -118,28 +129,31 @@ section p {
     }
 
     h3 {
-        font-size: clamp(1.1rem, 4vw, 1.5rem);
+        font-size: clamp(1.3rem, 3vw, 1.6rem);
     }
 
     p {
         font-size: 1rem;
-        line-height: 1.6;
+        line-height: 1.75;
     }
 
     .about p,
-    .menu-card-content p {
+    .menu-card-content p,
+    .service-card p,
+    .testimonial-card p {
         font-size: 1rem;
+        line-height: 1.75;
     }
 }
 
 /* Small mobile phones */
 @media (max-width: 480px) {
     h1 {
-        font-size: clamp(1.8rem, 7vw, 2.4rem);
+        font-size: clamp(2.4rem, 6vw, 3.5rem);
     }
 
     h2 {
-        font-size: clamp(1.5rem, 6vw, 2rem);
+        font-size: clamp(1.9rem, 4vw, 2.6rem);
     }
 
     h2[data-label]::before {

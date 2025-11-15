@@ -15,8 +15,8 @@ damit sie auf Mobile und Desktop sofort ins Auge fallen.
     /* Typography System */
     --font-display: "Playfair Display", serif;
     --font-body: "Inter", sans-serif;
-    --line-height-base: 1.55;
-    --line-height-tight: 1.25;
+    --line-height-base: 1.65;
+    --line-height-tight: 1.2;
     --letter-spacing-wide: 0.06em;
     
     /* New Color System */

@@ -15,8 +15,9 @@
 .catering-inquiry h3 {
     font-family: var(--font-display);
     color: var(--color-accent);
-    font-size: 1.75rem;
-    font-weight: 600;
+    font-size: clamp(1.3rem, 3vw, 1.6rem);
+    font-weight: 500;
+    letter-spacing: -0.01em;
     margin-bottom: 0.5rem;
     text-align: center;
 }
@@ -27,7 +28,8 @@
     color: var(--color-text);
     margin-bottom: 2rem;
     font-size: 1rem;
-    line-height: 1.6;
+    line-height: 1.75;
+    letter-spacing: 0.01em;
 }
 
 .catering-form-container {
@@ -41,17 +43,23 @@
 }
 
 .catering-form-container h3 {
+    font-family: var(--font-display);
     color: var(--color-accent);
-    font-size: 1.75rem;
+    font-size: clamp(1.3rem, 3vw, 1.6rem);
+    font-weight: 500;
+    letter-spacing: -0.01em;
     margin-bottom: 0.5rem;
     text-align: center;
 }
 
 .form-intro {
+    font-family: var(--font-body);
     text-align: center;
     color: var(--color-text);
     margin-bottom: 2rem;
     font-size: 1rem;
+    line-height: 1.75;
+    letter-spacing: 0.01em;
 }
 
 .catering-form {
@@ -167,8 +175,11 @@
 }
 
 .catering-direct-contact p {
+    font-family: var(--font-body);
     margin-bottom: 1rem;
     font-size: 1rem;
+    line-height: 1.75;
+    letter-spacing: 0.01em;
     color: var(--color-text);
 }
 
