@@ -78,6 +78,15 @@
         flex-direction: column;
         align-items: center;
     }
+
+    .hero-buttons {
+        gap: 0.25rem;
+    }
+
+    /* Hide "Jetzt Bestellen" button in hero section on mobile */
+    .hero-buttons .order-button {
+        display: none;
+    }
     
     .hero-buttons .cta-button,
     .menu-buttons .cta-button,

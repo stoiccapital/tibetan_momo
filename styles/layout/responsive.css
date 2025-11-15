@@ -6,13 +6,20 @@
         background-size: cover;
         background-position: center center;
         height: auto;
-        min-height: 500px;
-        align-items: center;
-        padding: 2rem 1rem;
+        min-height: 600px;
+        align-items: flex-start !important;
+        padding: 0 1rem 4rem !important;
+        justify-content: flex-start !important;
+        margin-top: 80px;
+        overflow: visible;
     }
 
     .hero-content {
-        padding-top: 3rem;
+        padding-top: 2rem !important;
+        justify-content: flex-start !important;
+        align-items: center;
+        min-height: 0;
+        width: 100%;
     }
 
     .hero-buttons {
@@ -52,8 +59,18 @@
 /* Mobile phones */
 @media (max-width: 480px) {
     .hero {
-        min-height: 450px;
-        padding: 1.5rem 1rem;
+        min-height: 550px;
+        padding: 0 1rem 3rem !important;
+        align-items: flex-start !important;
+        justify-content: flex-start !important;
+        margin-top: 80px;
+        overflow: visible;
+    }
+
+    .hero-content {
+        padding-top: 1rem !important;
+        justify-content: flex-start !important;
+        align-items: center;
     }
 
     .hero h1 {
@@ -104,7 +121,20 @@
 /* Small mobile phones */
 @media (max-width: 360px) {
     .hero {
-        min-height: 400px;
+        min-height: 500px;
+        padding: 0 0.875rem 2.5rem !important;
+        margin-top: 80px;
+        overflow: visible;
+    }
+
+    .hero-content {
+        padding-top: 0.75rem !important;
+        justify-content: flex-start !important;
+    }
+
+    .hero h1 {
+        font-size: clamp(2rem, 6vw, 3rem);
+        margin-bottom: 0.75rem;
     }
 
     .hero-buttons .cta-button {
