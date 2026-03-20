@@ -207,6 +207,21 @@
     max-width: 760px;
 }
 
+.final-cta-benefits {
+    margin: 0.5rem 0 0;
+    padding-left: 1.2rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.35rem 1.25rem;
+    max-width: 760px;
+}
+
+.final-cta-benefits li {
+    margin: 0;
+    color: var(--color-text);
+    font-weight: 500;
+}
+
 .final-cta-actions {
     display: flex;
     flex-wrap: wrap;
@@ -216,6 +231,10 @@
 
 @media (max-width: 768px) {
     .value-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .final-cta-benefits {
         grid-template-columns: 1fr;
     }
 
