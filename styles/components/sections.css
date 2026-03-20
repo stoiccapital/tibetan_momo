@@ -133,27 +133,29 @@
 
 .section-intro {
     max-width: 760px;
-    margin-bottom: 1.5rem;
+    margin-top: var(--space-micro);
+    margin-bottom: 0;
 }
 
 .value-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1rem;
+    gap: var(--space-group);
     max-width: var(--layout-content-max-width);
     width: 100%;
+    margin-top: var(--space-section-element);
 }
 
 .value-card {
     background-color: var(--color-surface);
     border: 1px solid var(--color-border);
     border-radius: 12px;
-    padding: 1.25rem;
+    padding: var(--space-group);
 }
 
 .value-card h3 {
     color: var(--color-primary);
-    margin-bottom: 0.4rem;
+    margin-bottom: var(--space-micro);
 }
 
 .value-card p {
@@ -161,13 +163,18 @@
 }
 
 .social-proof-line {
-    background-color: var(--color-background);
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    background-color: var(--color-surface);
+    padding-top: var(--space-group);
+    padding-bottom: 0;
 }
 
 .social-proof-line .google-rating {
     margin-bottom: 0;
+    justify-content: center;
+}
+
+.social-proof-line .rating-content {
+    background-color: var(--color-surface);
 }
 
 .faq {
@@ -178,14 +185,15 @@
     width: 100%;
     max-width: var(--layout-content-max-width);
     display: grid;
-    gap: 0.8rem;
+    gap: var(--space-group);
+    margin-top: var(--space-section-element);
 }
 
 .faq-list details {
     border: 1px solid var(--color-border);
     border-radius: 10px;
     background-color: var(--color-surface);
-    padding: 0.95rem 1rem;
+    padding: var(--space-group);
 }
 
 .faq-list summary {
@@ -195,7 +203,7 @@
 }
 
 .faq-list details p {
-    margin: 0.6rem 0 0;
+    margin: var(--space-micro) 0 0;
     color: var(--color-text-muted);
 }
 
@@ -205,14 +213,15 @@
 
 .final-cta p {
     max-width: 760px;
+    margin-top: var(--space-micro);
 }
 
 .final-cta-benefits {
-    margin: 0.5rem 0 0;
+    margin: var(--space-section-element) 0 0;
     padding-left: 1.2rem;
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0.35rem 1.25rem;
+    gap: var(--space-group);
     max-width: 760px;
 }
 
@@ -225,8 +234,8 @@
 .final-cta-actions {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
-    margin-top: 1rem;
+    gap: var(--space-group);
+    margin-top: var(--space-section-element);
 }
 
 @media (max-width: 768px) {
@@ -247,6 +256,63 @@
 /* ===========================
    Menu section
 ============================ */
+
+/* ===========================
+   Vertical rhythm system
+============================ */
+
+.about h2 + h3,
+.frozen-momos h2 + p,
+.service h2 + p,
+.final-cta h2 + p {
+    margin-top: var(--space-micro);
+}
+
+.about h3 + p {
+    margin-top: var(--space-section-element);
+}
+
+.about p + p {
+    margin-top: var(--space-group);
+}
+
+.about-image-block {
+    width: 100%;
+    margin-top: var(--space-section-element);
+    background-color: var(--color-surface);
+}
+
+.about-order {
+    margin-top: var(--space-section-element);
+}
+
+.menu h2 + .menu-grid,
+.service h2 + .service-grid,
+.testimonials h2 + .testimonials-grid {
+    margin-top: var(--space-section-element);
+}
+
+.menu-grid,
+.service-grid,
+.testimonials-grid,
+.combo-grid {
+    gap: var(--space-group);
+}
+
+.menu-card-horizontal,
+.service-card,
+.testimonial-card,
+.combo-card {
+    padding: var(--space-group);
+}
+
+.frozen-momos p {
+    margin-bottom: 0;
+}
+
+.frozen-momos-cta {
+    margin-top: var(--space-section-element);
+}
 
 /* Menu Section */
 .menu-grid {
@@ -942,5 +1008,56 @@ footer {
 .back-link:hover {
     background-color: var(--color-primary);
     color: var(--white);
+}
+
+/* ========================================================================
+   FINAL SPACING NORMALIZATION (STRICT 80 / 48 / 24 / 16)
+   ======================================================================== */
+
+.value-grid,
+.service-grid,
+.testimonials-grid,
+.combo-grid {
+    gap: var(--space-group) !important;
+}
+
+.value-card,
+.menu-card-horizontal,
+.service-card,
+.testimonial-card,
+.combo-card,
+.faq-list details {
+    padding: var(--space-group) !important;
+}
+
+.about h2 + h3,
+.frozen-momos h2 + p,
+.service h2 + p,
+.final-cta h2 + p {
+    margin-top: var(--space-micro) !important;
+}
+
+.about h3 + p,
+.menu h2 + .menu-grid,
+.service h2 + .service-grid,
+.testimonials h2 + .testimonials-grid,
+.faq h2 + .faq-list,
+.final-cta p + .final-cta-benefits,
+.frozen-momos p + .frozen-momos-cta {
+    margin-top: var(--space-section-element) !important;
+}
+
+.about p + p {
+    margin-top: var(--space-group) !important;
+}
+
+.about-image-block,
+.about-order,
+.final-cta-actions {
+    margin-top: var(--space-section-element) !important;
+}
+
+.final-cta-benefits {
+    gap: var(--space-group) !important;
 }
 

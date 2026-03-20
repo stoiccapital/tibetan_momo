@@ -14,7 +14,7 @@
     }
 
     .hero-content {
-        padding-top: 2rem !important;
+        padding-top: var(--space-micro) !important;
         justify-content: flex-start !important;
         align-items: center;
         min-height: 0;
@@ -36,7 +36,7 @@
         flex-direction: column;
         align-items: flex-start;
         text-align: left;
-        padding: 1.25rem;
+        padding: var(--space-group);
     }
     
     .menu-card-content {
@@ -49,7 +49,7 @@
         max-width: 100%;
         height: auto;
         min-height: 200px;
-        margin-top: 1rem;
+        margin-top: var(--space-micro);
     }
 
     .map-container iframe {
@@ -70,7 +70,7 @@
     }
 
     .hero-content {
-        padding-top: 1rem !important;
+        padding-top: var(--space-micro) !important;
         justify-content: flex-start !important;
         align-items: center;
     }
@@ -80,7 +80,7 @@
         font-size: clamp(2.4rem, 6vw, 3.5rem);
         font-weight: 700;
         letter-spacing: -0.02em;
-        margin-bottom: 1rem;
+        margin-bottom: var(--space-micro);
     }
 
     .hero-location {
@@ -93,18 +93,18 @@
     }
 
     .menu-card-horizontal {
-        padding: 1rem;
+        padding: var(--space-group);
     }
 
     /* Section padding handled by global layout system in section.css */
 
     .menu-prep-notice {
-        margin: 1.5rem auto;
+        margin: var(--space-group) auto;
     }
 
     .menu-combos {
-        margin: 2rem auto;
-        padding: 1.5rem;
+        margin: var(--space-group) auto;
+        padding: var(--space-group);
     }
 }
 
@@ -117,13 +117,13 @@
     }
 
     .hero-content {
-        padding-top: 0.75rem !important;
+        padding-top: var(--space-micro) !important;
         justify-content: flex-start !important;
     }
 
     .hero h1 {
         font-size: clamp(2rem, 6vw, 3rem);
-        margin-bottom: 0.75rem;
+        margin-bottom: var(--space-micro);
     }
 
     .hero-buttons .cta-button {

@@ -37,6 +37,10 @@
     --layout-padding-horizontal-navbar-tablet: 5%;  /* Navbar-specific: horizontal padding on tablet (≤768px) */
     --layout-padding-horizontal-navbar-mobile: 1.5rem;  /* Navbar-specific: horizontal padding on mobile (≤480px) */
     --layout-padding-horizontal-navbar-small: 1rem;  /* Navbar-specific: horizontal padding on small mobile (≤360px) */
+    --space-section: 80px;
+    --space-section-element: 48px;
+    --space-group: 24px;
+    --space-micro: 16px;
     
     /* ========================================================================
        NEUTRAL COLORS - Surfaces & Backgrounds

@@ -22,7 +22,7 @@ section {
     width: 100%;
     
     /* Spacing - uses global layout tokens for horizontal padding */
-    padding: 5rem var(--layout-padding-horizontal-desktop);
+    padding: var(--space-section) var(--layout-padding-horizontal-desktop);
     
     /* Typography - inherits global left alignment from reset.css */
     
@@ -92,12 +92,12 @@ section img {
 
 /* Compact spacing - for sections with less content */
 section.compact {
-    padding: 3rem 10%;
+    padding: var(--space-section) var(--layout-padding-horizontal-desktop);
 }
 
 /* Spacious spacing - for hero-like sections (except actual hero) */
 section.spacious {
-    padding: 6rem 10%;
+    padding: var(--space-section) var(--layout-padding-horizontal-desktop);
 }
 
 /* Full-width sections - removes horizontal padding */
@@ -115,7 +115,7 @@ section.full-width {
 .content-section {
     max-width: 800px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: var(--space-section);
     margin-top: 80px;
     /* text-align: left inherited from global rule */
     display: flex;
@@ -125,17 +125,17 @@ section.full-width {
 
 .content-section h2 {
     color: var(--color-text);
-    margin-bottom: 2rem;
+    margin-bottom: var(--space-group);
 }
 
 .content-section h3 {
     color: var(--color-primary);
-    margin: 2rem 0 1rem;
+    margin: var(--space-group) 0 var(--space-micro);
 }
 
 .content-section p {
     font-family: var(--font-body);
-    margin-bottom: 1.5rem;
+    margin-bottom: var(--space-group);
     line-height: 1.75;
     letter-spacing: 0.01em;
     /* text-align: left inherited from global rule */
@@ -155,7 +155,7 @@ section.full-width {
 /* Tablet and below */
 @media (max-width: 768px) {
     section {
-        padding: 3rem var(--layout-padding-horizontal-tablet);
+        padding: var(--space-section) var(--layout-padding-horizontal-tablet);
     }
 
     .legal {
@@ -163,18 +163,18 @@ section.full-width {
     }
     
     section.compact {
-        padding: 2rem var(--layout-padding-horizontal-tablet);
+        padding: var(--space-section) var(--layout-padding-horizontal-tablet);
     }
     
     section.spacious {
-        padding: 3.5rem var(--layout-padding-horizontal-tablet);
+        padding: var(--space-section) var(--layout-padding-horizontal-tablet);
     }
 }
 
 /* Mobile phones */
 @media (max-width: 480px) {
     section {
-        padding: 2.5rem var(--layout-padding-horizontal-mobile);
+        padding: var(--space-section) var(--layout-padding-horizontal-mobile);
     }
 
     .legal {
@@ -182,18 +182,18 @@ section.full-width {
     }
     
     section.compact {
-        padding: 2rem var(--layout-padding-horizontal-mobile);
+        padding: var(--space-section) var(--layout-padding-horizontal-mobile);
     }
     
     section.spacious {
-        padding: 3rem var(--layout-padding-horizontal-mobile);
+        padding: var(--space-section) var(--layout-padding-horizontal-mobile);
     }
 }
 
 /* Small mobile phones */
 @media (max-width: 360px) {
     section {
-        padding: 2rem var(--layout-padding-horizontal-small);
+        padding: var(--space-section) var(--layout-padding-horizontal-small);
     }
 
     .legal {
@@ -201,10 +201,10 @@ section.full-width {
     }
     
     section.compact {
-        padding: 1.5rem var(--layout-padding-horizontal-small);
+        padding: var(--space-section) var(--layout-padding-horizontal-small);
     }
     
     section.spacious {
-        padding: 2.5rem var(--layout-padding-horizontal-small);
+        padding: var(--space-section) var(--layout-padding-horizontal-small);
     }
 } 
