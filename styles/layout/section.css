@@ -75,7 +75,7 @@ section img {
 
 .about,
 .frozen-momos {
-    background-color: var(--color-surface);
+    background-color: var(--color-background);
 }
 
 /* Legal pages should follow the same top offset pattern as the index layout */
