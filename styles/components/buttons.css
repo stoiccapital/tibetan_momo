@@ -20,11 +20,11 @@
     text-transform: uppercase;
     text-align: center;
     border-radius: 12px;
-    background-color: var(--color-accent);
-    color: var(--color-text-on-accent);
+    background-color: var(--color-primary);
+    color: var(--color-on-primary);
     text-decoration: none;
     transition: all 0.3s ease;
-    box-shadow: 0 2px 8px rgba(201, 75, 63, 0.3);
+    box-shadow: 0 2px 8px rgba(103, 25, 19, 0.3);
     cursor: pointer;
     border: none;
     /* Consistent sizing for all buttons */
@@ -38,9 +38,10 @@
 .call-button:hover,
 .order-button:hover,
 .combo-button:hover {
-    background-color: var(--color-accent-dark);
+    background-color: var(--color-primary-dark);
+    color: var(--color-on-primary);
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(201, 75, 63, 0.4);
+    box-shadow: 0 4px 12px rgba(103, 25, 19, 0.4);
 }
 
 .btn:active,
@@ -48,7 +49,20 @@
 .call-button:active,
 .order-button:active,
 .combo-button:active {
+    background-color: var(--color-primary-darker);
+    color: var(--color-on-primary);
     transform: translateY(0);
+}
+
+.btn:focus-visible,
+.cta-button:focus-visible,
+.call-button:focus-visible,
+.order-button:focus-visible,
+.combo-button:focus-visible {
+    color: var(--color-on-primary);
+    outline: 2px solid var(--color-focus);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 4px var(--color-focus-ring);
 }
 
 /* Button Layouts */

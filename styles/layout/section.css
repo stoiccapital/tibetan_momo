@@ -61,18 +61,27 @@ section img {
 
 /* Primary sections - white background */
 .hero,
-.menu,
 .testimonials,
 .gruppen-image {
     background-color: var(--color-surface);
 }
 
 /* Secondary sections - cream background for contrast */
-.about,
+.menu,
 .service,
-.contact,
+.contact {
+    background-color: var(--color-background);
+}
+
+.about,
 .frozen-momos {
-    background-color: var(--color-surface-alt);
+    background-color: var(--color-surface);
+}
+
+/* Legal pages should follow the same top offset pattern as the index layout */
+.legal {
+    margin-top: 60px;
+    background-color: var(--color-background);
 }
 
 /* ========================================================================
@@ -120,7 +129,7 @@ section.full-width {
 }
 
 .content-section h3 {
-    color: var(--color-accent);
+    color: var(--color-primary);
     margin: 2rem 0 1rem;
 }
 
@@ -134,7 +143,7 @@ section.full-width {
 }
 
 .content-section strong {
-    color: var(--color-accent);
+    color: var(--color-primary);
 }
 
 /* ========================================================================
@@ -147,6 +156,10 @@ section.full-width {
 @media (max-width: 768px) {
     section {
         padding: 3rem var(--layout-padding-horizontal-tablet);
+    }
+
+    .legal {
+        margin-top: 80px;
     }
     
     section.compact {
@@ -163,6 +176,10 @@ section.full-width {
     section {
         padding: 2.5rem var(--layout-padding-horizontal-mobile);
     }
+
+    .legal {
+        margin-top: 80px;
+    }
     
     section.compact {
         padding: 2rem var(--layout-padding-horizontal-mobile);
@@ -177,6 +194,10 @@ section.full-width {
 @media (max-width: 360px) {
     section {
         padding: 2rem var(--layout-padding-horizontal-small);
+    }
+
+    .legal {
+        margin-top: 80px;
     }
     
     section.compact {

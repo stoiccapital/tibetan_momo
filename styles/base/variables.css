@@ -44,6 +44,7 @@
        Base surfaces that provide the warm, handcrafted foundation.
        Never use accent colors here - these define the canvas.
     */
+    --color-background: #f6eeee;   /* very light tint of #671913 */
     --color-bg: #f7f1e8;           /* Page background - warm cream (WCAG: 12.8:1 with --color-text) */
     --color-surface: #ffffff;      /* Cards, sections, elevated surfaces - pure white */
     --color-surface-alt: #f1e6d8;  /* Alternate section background - lighter cream (subtle variation) */
@@ -62,24 +63,25 @@
     --color-text-on-bg: var(--color-text);      /* Explicit token for text on cream background */
     
     /* ========================================================================
-       BRAND COLORS - Tibetan Identity
+       BRAND COLORS - Primary System (#671913)
        ========================================================================
-       The warm Tibetan red accent defines primary CTAs and brand moments.
-       Never use accent for body text - it's reserved for interactive elements.
+       Unified brand scale for all interactive and emphasis elements.
     */
-    --color-accent: #c94b3f;       /* Primary CTA, brand accent - warm Tibetan red (WCAG: 4.5:1 with white text) */
-    --color-accent-dark: #a63d33;  /* Hover states, pressed buttons - darker accent (WCAG: 5.8:1 with white text) */
-    --color-accent-soft: #f3c3b8;  /* Soft tint for focus rings, subtle backgrounds - light red tint */
-    --color-accent-subtle: #f9e5e2; /* Very subtle accent background for delicate highlights */
+    --color-primary: #671913;
+    --color-primary-dark: #55140f;
+    --color-primary-darker: #430f0b;
+    --color-primary-light: #b97772;
+    --color-primary-lighter: #f4e6e4;
+    --color-primary-soft: rgba(103, 25, 19, 0.1);
+    --color-on-primary: #ffffff;
     
     /* ========================================================================
        INTERACTION COLORS - Semantic States
        ========================================================================
        Tokens for interactive elements and user feedback states.
     */
-    --color-text-on-accent: #ffffff; /* Text on accent buttons/CTAs - always white (WCAG: 4.5:1 on --color-accent) */
-    --color-focus: #c94b3f;         /* Focus ring color - matches accent for consistency */
-    --color-focus-ring: var(--color-accent-soft); /* Focus ring background - soft tint for accessibility */
+    --color-focus: var(--color-primary);
+    --color-focus-ring: var(--color-primary-soft);
     --color-hover-overlay: rgba(0, 0, 0, 0.05);  /* Subtle hover overlay for interactive surfaces */
     
     /* ========================================================================
@@ -88,25 +90,25 @@
        Semantic colors for user feedback. Designed to be warm and non-alarming
        while maintaining clear communication.
     */
-    --color-success: #3c8c5a;      /* Success states, confirmations - warm green (WCAG: 4.5:1 with white text) */
-    --color-success-bg: #d4edda;    /* Success background - light green tint */
-    --color-success-text: #155724;  /* Success text on light background - dark green */
-    --color-success-border: #c3e6cb; /* Success border - medium green */
+    --color-success: var(--color-primary);
+    --color-success-bg: var(--color-primary-lighter);
+    --color-success-text: var(--color-primary-darker);
+    --color-success-border: #e3c5c2;
     
-    --color-warning: #d97706;      /* Warning states, cautions - warm amber (WCAG: 4.5:1 with white text) */
-    --color-warning-bg: #fff3cd;    /* Warning background - light amber tint */
-    --color-warning-text: #856404;    /* Warning text on light background - dark amber */
-    --color-warning-border: #ffeaa7; /* Warning border - medium amber */
+    --color-warning: var(--color-primary-dark);
+    --color-warning-bg: #f8edeb;
+    --color-warning-text: var(--color-primary-darker);
+    --color-warning-border: #e7cdc9;
     
-    --color-danger: #c94b3f;       /* Error states, destructive actions - matches accent red (WCAG: 4.5:1 with white text) */
-    --color-danger-bg: #f8d7da;    /* Error background - light red tint */
-    --color-danger-text: #721c24;   /* Error text on light background - dark red */
-    --color-danger-border: #f5c6cb; /* Error border - medium red */
+    --color-danger: var(--color-primary-darker);
+    --color-danger-bg: #f7e9e8;
+    --color-danger-text: var(--color-primary-darker);
+    --color-danger-border: #e5c9c6;
     
-    --color-info: #0ea5e9;         /* Informational states - soft blue (WCAG: 4.5:1 with white text) */
-    --color-info-bg: #dbeafe;      /* Info background - light blue tint */
-    --color-info-text: #1e40af;     /* Info text on light background - dark blue */
-    --color-info-border: #bfdbfe;   /* Info border - medium blue */
+    --color-info: var(--color-primary-dark);
+    --color-info-bg: #f6eeed;
+    --color-info-text: var(--color-primary-darker);
+    --color-info-border: #e8d3d1;
     
     /* ========================================================================
        LEGACY VARIABLES - Backward Compatibility
@@ -114,10 +116,15 @@
        Preserved for existing component code. All map to new semantic system.
        Components should migrate to semantic tokens over time.
     */
-    --tibetan-red: var(--color-accent);
-    --tibetan-blue: #00205B;       /* Reserved for specific cultural/traditional use cases */
-    --tibetan-yellow: #fbc02d;     /* Reserved for specific cultural/traditional use cases */
-    --tibetan-gold: #F4BB44;       /* Reserved for specific cultural/traditional use cases */
+    --color-accent: var(--color-primary);
+    --color-accent-dark: var(--color-primary-dark);
+    --color-accent-soft: var(--color-primary-lighter);
+    --color-accent-subtle: var(--color-primary-lighter);
+    --color-text-on-accent: var(--color-on-primary);
+    --tibetan-red: var(--color-primary);
+    --tibetan-blue: var(--color-primary-dark);
+    --tibetan-yellow: var(--color-primary-light);
+    --tibetan-gold: var(--color-primary-light);
     --white: var(--color-surface);
     --light-gray: var(--color-surface-alt);
     --dark-gray: var(--color-text);

@@ -10,7 +10,10 @@ html, body {
     line-height: var(--line-height-base);
     font-size: 16px;
     color: var(--color-text);
-    background-color: var(--color-bg);
+}
+
+body {
+    background-color: var(--color-background);
 }
 
 html {

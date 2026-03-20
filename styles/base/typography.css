@@ -71,6 +71,25 @@ p {
     color: var(--color-text);
 }
 
+a {
+    color: var(--color-primary);
+    text-decoration-color: var(--color-primary-light);
+    text-underline-offset: 2px;
+    transition: color 0.25s ease, text-decoration-color 0.25s ease;
+}
+
+a:hover {
+    color: var(--color-primary-dark);
+    text-decoration-color: var(--color-primary);
+}
+
+a:focus-visible {
+    outline: 2px solid var(--color-focus);
+    outline-offset: 2px;
+    border-radius: 4px;
+    box-shadow: 0 0 0 4px var(--color-focus-ring);
+}
+
 /* Enhanced paragraph sizes for specific sections */
 .about p,
 .menu-card-content p,
@@ -102,7 +121,7 @@ p + p {
 }
 
 .about h3 {
-    color: var(--color-accent);
+    color: var(--color-primary);
     margin-bottom: 1.2rem;
     font-weight: 500;
 }

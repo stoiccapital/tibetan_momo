@@ -14,7 +14,7 @@
 
 .catering-inquiry h3 {
     font-family: var(--font-display);
-    color: var(--color-accent);
+    color: var(--color-primary);
     font-size: clamp(1.3rem, 3vw, 1.6rem);
     font-weight: 500;
     letter-spacing: -0.01em;
@@ -44,7 +44,7 @@
 
 .catering-form-container h3 {
     font-family: var(--font-display);
-    color: var(--color-accent);
+    color: var(--color-primary);
     font-size: clamp(1.3rem, 3vw, 1.6rem);
     font-weight: 500;
     letter-spacing: -0.01em;
@@ -106,8 +106,8 @@
 .form-group select:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: var(--color-accent);
-    box-shadow: 0 0 0 3px var(--color-accent-soft);
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px var(--color-focus-ring);
 }
 
 .form-group input::placeholder,
@@ -136,7 +136,7 @@
 }
 
 .form-note a {
-    color: var(--color-accent);
+    color: var(--color-primary);
     text-decoration: none;
     font-weight: 600;
 }
@@ -155,15 +155,15 @@
 }
 
 .form-message.success {
-    background-color: #d4edda;
-    color: #155724;
-    border: 1px solid #c3e6cb;
+    background-color: var(--color-success-bg);
+    color: var(--color-success-text);
+    border: 1px solid var(--color-success-border);
 }
 
 .form-message.error {
-    background-color: #f8d7da;
-    color: #721c24;
-    border: 1px solid #f5c6cb;
+    background-color: var(--color-danger-bg);
+    color: var(--color-danger-text);
+    border: 1px solid var(--color-danger-border);
 }
 
 /* Direct Contact Alternative */

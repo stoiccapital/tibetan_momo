@@ -171,7 +171,7 @@
     font-size: 1.35rem;
     font-weight: 600;
     letter-spacing: -0.01em;
-    color: var(--color-accent);
+    color: var(--color-primary);
     margin-bottom: 0.5rem;
 }
 
@@ -194,7 +194,7 @@
     font-family: var(--font-body);
     font-weight: 600;
     letter-spacing: 0.03em;
-    color: var(--color-accent);
+    color: var(--color-primary);
     font-size: 1.05rem;
 }
 
@@ -207,8 +207,8 @@
     margin-left: 0;
     margin-right: auto;
     padding: 1rem 1.5rem;
-    background-color: var(--color-accent-soft);
-    border-left: 4px solid var(--color-accent);
+    background-color: var(--color-primary-lighter);
+    border-left: 4px solid var(--color-primary);
     border-radius: 12px;
     /* text-align: left inherited from global rule */
 }
@@ -223,7 +223,7 @@
 }
 
 .menu-prep-notice strong {
-    color: var(--color-accent);
+    color: var(--color-primary);
 }
 
 /* Menu Combinations Section */
@@ -231,7 +231,7 @@
     max-width: 900px;
     margin: 3rem auto;
     padding: 2rem;
-    background-color: var(--color-accent-soft);
+    background-color: var(--color-primary-lighter);
     border-radius: 15px;
     border: 2px solid var(--color-border);
 }
@@ -239,7 +239,7 @@
 .menu-combos h3 {
     font-family: var(--font-display);
     /* text-align: left inherited from global rule */
-    color: var(--color-accent);
+    color: var(--color-primary);
     font-size: clamp(1.3rem, 3vw, 1.6rem);
     font-weight: 500;
     letter-spacing: -0.01em;
@@ -268,7 +268,7 @@
 
 .combo-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 5px 20px rgba(201, 75, 63, 0.2);
+    box-shadow: 0 5px 20px rgba(103, 25, 19, 0.2);
 }
 
 .combo-card h4 {
@@ -291,7 +291,7 @@
 .combo-price {
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--color-accent);
+    color: var(--color-primary);
     margin-top: 0.5rem !important;
 }
 
@@ -319,7 +319,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background-color: var(--color-surface-alt);
+    background-color: var(--color-surface);
 }
 
 .frozen-momos h2 {
@@ -423,7 +423,7 @@
     font-family: var(--font-display);
     font-size: clamp(1.3rem, 3vw, 1.6rem);
     font-weight: 500;
-    color: var(--color-accent);
+    color: var(--color-primary);
     margin-bottom: 1rem;
     letter-spacing: -0.01em;
 }
@@ -489,17 +489,17 @@
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    background-color: rgba(201, 75, 63, 0.08);
-    border: 2px solid var(--color-accent);
+    background-color: rgba(103, 25, 19, 0.08);
+    border: 2px solid var(--color-primary);
     padding: 0.75rem 1.25rem;
     border-radius: 12px;
-    box-shadow: 0 2px 12px rgba(201, 75, 63, 0.15);
+    box-shadow: 0 2px 12px rgba(103, 25, 19, 0.15);
     transition: all 0.3s ease;
 }
 
 .rating-content:hover {
-    background-color: rgba(201, 75, 63, 0.12);
-    box-shadow: 0 4px 16px rgba(201, 75, 63, 0.2);
+    background-color: rgba(103, 25, 19, 0.12);
+    box-shadow: 0 4px 16px rgba(103, 25, 19, 0.2);
     transform: translateY(-2px);
 }
 
@@ -511,7 +511,7 @@
 
 .rating-text {
     font-family: var(--font-body);
-    color: var(--color-accent);
+    color: var(--color-primary);
     text-decoration: none;
     font-weight: 600;
     font-size: 0.95rem;
@@ -521,7 +521,7 @@
 }
 
 .rating-text:hover {
-    color: var(--color-accent-dark);
+    color: var(--color-primary-dark);
 }
 
 /* Testimonials Grid Layout */
@@ -553,7 +553,7 @@
 
 .stars {
     font-family: var(--font-display);
-    color: #FFD700;
+    color: var(--color-primary-light);
     font-size: 1.25rem;
     /* text-align: left inherited from global rule */
     letter-spacing: 2px;
@@ -573,7 +573,7 @@
 
 .testimonial-author {
     font-family: var(--font-body);
-    color: var(--color-accent);
+    color: var(--color-primary);
     font-weight: 600;
     /* text-align: left inherited from global rule */
     font-size: 0.95rem;
@@ -641,8 +641,8 @@
 
 /* Footer */
 footer {
-    background-color: var(--color-accent);
-    color: #ffffff;
+    background-color: var(--color-surface);
+    color: var(--color-text);
     /* Horizontal padding uses same tokens as global section layout */
     padding: 3rem var(--layout-padding-horizontal-desktop);
     text-align: left;
@@ -673,7 +673,7 @@ footer {
 .opening-hours h3,
 .contact-details h3 {
     font-family: var(--font-display);
-    color: var(--tibetan-yellow);
+    color: var(--color-text);
     margin-bottom: 1rem;
     font-size: clamp(1.3rem, 3vw, 1.6rem);
     font-weight: 500;
@@ -687,13 +687,13 @@ footer {
     line-height: 1.75;
     letter-spacing: 0.01em;
     margin: 0;
-    color: var(--white);
+    color: var(--color-text);
     font-size: 1rem;
 }
 
 /* Copyright Section */
 .copyright {
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-top: 1px solid var(--color-border);
     padding-top: 2rem;
     text-align: left;
     max-width: var(--layout-content-max-width);
@@ -705,19 +705,19 @@ footer {
 .copyright p {
     font-family: var(--font-body);
     margin: 0.5rem 0;
-    color: var(--white);
+    color: var(--color-text);
     font-size: 0.95rem;
 }
 
 .copyright a {
     font-family: var(--font-body);
-    color: var(--white);
+    color: var(--color-text);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .copyright a:hover {
-    color: var(--tibetan-yellow);
+    color: var(--color-primary);
     text-decoration: underline;
 }
 
@@ -791,7 +791,7 @@ footer {
     font-size: clamp(1.9rem, 4vw, 2.6rem);
     font-weight: 600;
     letter-spacing: -0.01em;
-    color: var(--color-accent);
+    color: var(--color-primary);
 }
 
 .legal-wrapper h3 {
@@ -813,13 +813,13 @@ footer {
 .back-link {
     display: inline-block;
     margin-bottom: 2rem;
-    color: var(--tibetan-blue);
+    color: var(--color-primary-dark);
     text-decoration: none;
     font-weight: bold;
 }
 
 .back-link:hover {
-    background-color: var(--tibetan-red);
+    background-color: var(--color-primary);
     color: var(--white);
 }
 

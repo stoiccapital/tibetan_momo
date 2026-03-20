@@ -261,6 +261,11 @@ class CookieConsent {
     }
 
     init() {
+        // Legal pages don't include cookie popup markup; skip cookie logic there.
+        if (!this.popup || !this.acceptBtn || !this.rejectBtn) {
+            return;
+        }
+
         // Check if user has already made a choice
         if (!this.hasConsent()) {
             this.showPopup();

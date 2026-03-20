@@ -49,10 +49,10 @@
     letter-spacing: var(--letter-spacing-wide);
     text-transform: uppercase;
     text-align: center;
-    background-color: var(--color-accent);
-    color: var(--color-text-on-accent);
+    background-color: var(--color-primary);
+    color: var(--color-on-primary);
     transition: all 0.3s ease;
-    box-shadow: 0 2px 8px rgba(201, 75, 63, 0.3);
+    box-shadow: 0 2px 8px rgba(103, 25, 19, 0.3);
     cursor: pointer;
     border: none;
     min-height: 44px;
@@ -68,16 +68,24 @@
     white-space: nowrap;
 }
 
-/* WhatsApp Button - Uses base button hover/active styles from buttons.css */
-.whatsapp-btn:hover,
-.whatsapp-btn:active {
-    background-color: var(--color-accent-dark);
+/* WhatsApp Button - Uses primary interaction scale */
+.whatsapp-btn:hover {
+    background-color: var(--color-primary-dark);
+    color: var(--color-on-primary);
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(201, 75, 63, 0.4);
+    box-shadow: 0 4px 12px rgba(103, 25, 19, 0.4);
 }
 
 .whatsapp-btn:active {
+    background-color: var(--color-primary-darker);
+    color: var(--color-on-primary);
     transform: translateY(0);
+}
+
+.sticky-order-button:focus-visible {
+    outline: 2px solid var(--color-focus);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 4px var(--color-focus-ring);
 }
 
 /* Uber Eats Button - Hidden until restaurant URL is available */
