@@ -1,4 +1,4 @@
-console.log('Willkommen im Tibetan Momo Restaurant!'); 
+console.log('Willkommen im Lamu Momo Restaurant!'); 
 
 // Utility function for mobile detection
 function isMobile() {
